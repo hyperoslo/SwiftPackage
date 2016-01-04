@@ -42,7 +42,8 @@ file_names.each do |file_name|
     '.png',
     '.lproj',
     '.rb',
-    '.framework']
+    '.framework',
+    '.playground']
 
   if !ignored_file_types.include?(File.extname(file_name))
     text = File.read(file_name)
