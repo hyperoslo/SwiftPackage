@@ -69,7 +69,7 @@ git_directory = "#{folder_path}/.git"
 FileUtils.rm_rf git_directory
 FileUtils.rm('init.rb')
 
-system("carthage install")
+system("carthage update")
 system("git init && git add . && git commit -am 'Initial commit'")
 system("git remote add origin https://github.com/#{username}/#{package_name}.git")
 system("open \"#{folder_path}/#{package_name}.xcodeproj\"")
