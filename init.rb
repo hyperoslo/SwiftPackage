@@ -58,6 +58,8 @@ file_names.each do |file_name|
   end
 end
 
+FileUtils.rm('README.md')
+File.rename('SwiftPackage-README.md', 'README.md')
 File.rename("#{folder_path}/SwiftPackage.podspec", "#{folder_path}/#{package_name}.podspec")
 File.rename("#{folder_path}/SwiftPackage", "#{folder_path}/#{package_name}")
 File.rename("#{folder_path}/SwiftPackageTests", "#{folder_path}/#{package_name}Tests")
