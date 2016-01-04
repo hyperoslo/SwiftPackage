@@ -1,49 +1,28 @@
-# <PACKAGENAME>
+# SwiftPackage
 
-[![CI Status](http://img.shields.io/travis/<USERNAME>/<PACKAGENAME>.svg?style=flat)](https://travis-ci.org/<USERNAME>/<PACKAGENAME>)
-[![Version](https://img.shields.io/cocoapods/v/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
-[![Platform](https://img.shields.io/cocoapods/p/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
-
-## Description
-
-**<PACKAGENAME>** description.
+**SwiftPackage** is a template to create Swift frameworks. It creates basic
+folder structure and the project with shared framework and test targets for iOS
+and OSX. It also includes the necessary metadata files to make it
+[CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage)
+compatible.
 
 ## Usage
 
-```swift
-<API>
-```
+1. `git clone https://github.com/hyperoslo/SwiftPackage.git NewPackageName`
+2. `cd NewPackageName`
+3. `./init.rb`
+4. Enter the requested info.
+
+"NewPackageName" here is the name of your Swift framework.
 
 ## Author
 
-<AUTHOR_NAME>, <AUTHOR_EMAIL>
-
-## Installation
-
-**<PACKAGENAME>** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod '<PACKAGENAME>'
-```
-
-**<PACKAGENAME>** is also available through [Carthage](https://github.com/Carthage/Carthage).
-To install just write into your Cartfile:
-
-```ruby
-github "<USERNAME>/<PACKAGENAME>"
-```
-
-## Author
-
-<AUTHOR_NAME>, <AUTHOR_EMAIL>
+Hyper Interaktiv AS, ios@hyper.no
 
 ## Contributing
 
-We would love you to contribute to **<PACKAGENAME>**, check the [CONTRIBUTING](https://github.com/<USERNAME>/<PACKAGENAME>/blob/master/CONTRIBUTING.md) file for more info.
+We would love you to contribute to **SwiftPackage**, check the [CONTRIBUTING](https://github.com/hyperoslo/SwiftPackage/blob/master/CONTRIBUTING.md) file for more info.
 
 ## License
 
-**<PACKAGENAME>** is available under the MIT license. See the [LICENSE](https://github.com/<USERNAME>/<PACKAGENAME>/blob/master/LICENSE.md) file for more info.
+**SwiftPackage** is available under the MIT license. See the [LICENSE](https://github.com/hyperoslo/SwiftPackage/blob/master/LICENSE.md) file for more info.
