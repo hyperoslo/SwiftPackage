@@ -41,7 +41,8 @@ file_names.each do |file_name|
     '.appiconset',
     '.png',
     '.lproj',
-    '.rb']
+    '.rb',
+    '.framework']
 
   if !ignored_file_types.include?(File.extname(file_name))
     text = File.read(file_name)

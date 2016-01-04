@@ -2,10 +2,10 @@
 import Quick
 import Nimble
 
-class SwiftPackageiOSSpec: QuickSpec {
+class SharedSpec: QuickSpec {
 
   override func spec() {
-    describe("SwiftPackageiOS") {
+    describe("Shared") {
       describe("test") {
         it("passes") {
           expect(true).to(beTrue())

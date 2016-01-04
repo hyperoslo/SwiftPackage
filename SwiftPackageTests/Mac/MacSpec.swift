@@ -2,10 +2,10 @@
 import Quick
 import Nimble
 
-class SwiftPackageMacSpec: QuickSpec {
+class MacSpec: QuickSpec {
 
   override func spec() {
-    describe("SwiftPackageMac") {
+    describe("Mac") {
       describe("test") {
         it("passes") {
           expect(true).to(beTrue())
