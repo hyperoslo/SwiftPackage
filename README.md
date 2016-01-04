@@ -1,9 +1,14 @@
-# <PODNAME>
+# <PACKAGENAME>
 
-[![CI Status](http://img.shields.io/travis/<USERNAME>/<PODNAME>.svg?style=flat)](https://travis-ci.org/<USERNAME>/<PODNAME>)
-[![Version](https://img.shields.io/cocoapods/v/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
-[![License](https://img.shields.io/cocoapods/l/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
-[![Platform](https://img.shields.io/cocoapods/p/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
+[![CI Status](http://img.shields.io/travis/<USERNAME>/<PACKAGENAME>.svg?style=flat)](https://travis-ci.org/<USERNAME>/<PACKAGENAME>)
+[![Version](https://img.shields.io/cocoapods/v/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![License](https://img.shields.io/cocoapods/l/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
+[![Platform](https://img.shields.io/cocoapods/p/<PACKAGENAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PACKAGENAME>)
+
+## Description
+
+**<PACKAGENAME>** description.
 
 ## Usage
 
@@ -11,19 +16,34 @@
 <API>
 ```
 
+## Author
+
+<AUTHOR_NAME>, <AUTHOR_EMAIL>
+
 ## Installation
 
-**<PODNAME>** is available through [CocoaPods](http://cocoapods.org). To install
+**<PACKAGENAME>** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod '<PODNAME>'
+pod '<PACKAGENAME>'
+```
+
+**<PACKAGENAME>** is also available through [Carthage](https://github.com/Carthage/Carthage).
+To install just write into your Cartfile:
+
+```ruby
+github "<USERNAME>/<PACKAGENAME>"
 ```
 
 ## Author
 
 <AUTHOR_NAME>, <AUTHOR_EMAIL>
 
+## Contributing
+
+We would love you to contribute to **<PACKAGENAME>**, check the [CONTRIBUTING](https://github.com/<USERNAME>/<PACKAGENAME>/blob/master/CONTRIBUTING.md) file for more info.
+
 ## License
 
-**<PODNAME>** is available under the MIT license. See the LICENSE file for more info.
+**<PACKAGENAME>** is available under the MIT license. See the [LICENSE](https://github.com/<USERNAME>/<PACKAGENAME>/blob/master/LICENSE.md) file for more info.
