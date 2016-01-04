@@ -24,6 +24,8 @@ author_email = prompt('E-mail', default_author_email) || default_author_email
 username = prompt('Username', default_username) || default_username
 
 file_names = Dir["#{folder_path}/**/*.*"]
+file_names.push("#{folder_path}/.slather.yml")
+file_names.push("#{folder_path}/.travis.yml")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS.xcscheme")
