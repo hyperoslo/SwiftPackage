@@ -28,8 +28,6 @@ file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS.xcscheme")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac.xcscheme")
-file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS-Tests.xcscheme")
-file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac-Tests.xcscheme")
 
 file_names.each do |file_name|
   ignored_file_types = ['.xccheckout',
@@ -65,16 +63,13 @@ File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftP
   "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-iOS.xcscheme")
 File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac.xcscheme",
   "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-Mac.xcscheme")
-File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS-Tests.xcscheme",
-  "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-iOS-Tests.xcscheme")
-File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac-Tests.xcscheme",
-  "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-Mac-Tests.xcscheme")
 File.rename("#{folder_path}/SwiftPackage.xcodeproj", "#{folder_path}/#{package_name}.xcodeproj")
 
 git_directory = "#{folder_path}/.git"
 FileUtils.rm_rf git_directory
 FileUtils.rm('init.rb')
 
+system("carthage install")
 system("git init && git add . && git commit -am 'Initial commit'")
 system("git remote add origin https://github.com/#{username}/#{package_name}.git")
 system("open \"#{folder_path}/#{package_name}.xcodeproj\"")
