@@ -23,7 +23,7 @@ bundle_domain = prompt('Bundle domain', default_bundle_domain) || default_bundle
 author_name = prompt('Author', default_author_name) || default_author_name
 author_email = prompt('E-mail', default_author_email) || default_author_email
 username = prompt('Username', default_username) || default_username
-use_storyboards = prompt('Example with Storyboards? - "yes" or "no"', default_storyboards) || default_storyboards
+use_storyboards = prompt('Example with Storyboards? - yes/no', default_storyboards) || default_storyboards
 storyboards_example = use_storyboards.downcase == "yes"
 
 file_names = Dir["#{folder_path}/**/*.*"]
@@ -38,7 +38,6 @@ file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/Sw
 
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
-file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/SwiftPackageDemo.xcscheme")
 
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
