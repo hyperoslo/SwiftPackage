@@ -38,9 +38,11 @@ file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/Sw
 
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
+file_names.push("#{folder_path}/Example/CodeDemo/Podfile")
 
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
+file_names.push("#{folder_path}/Example/StoryboardsDemo/Podfile")
 
 file_names.each do |file_name|
   ignored_file_types = ['.xccheckout',
