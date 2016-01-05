@@ -96,10 +96,10 @@ else
 end
 
 File.rename("#{folder_path}/Example/#{example_folder}", "#{folder_path}/Example/#{example_name}")
-File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj",
-  "#{folder_path}/Example/#{example_name}/#{example_name}.xcodeproj")
 File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/SwiftPackageDemo.xcscheme",
   "#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/#{example_name}.xcscheme")
+File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj",
+  "#{folder_path}/Example/#{example_name}/#{example_name}.xcodeproj")
 File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo",
   "#{folder_path}/Example/#{example_name}/#{example_name}")
 
