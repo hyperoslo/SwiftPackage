@@ -4,7 +4,7 @@
 folder structure and the project with shared framework and test targets for iOS
 and OSX. It also includes the necessary metadata files to make it
 [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage)
-compatible.
+compatible and generates an empty example project.
 
 ## Usage
 
