@@ -38,10 +38,12 @@ file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/Sw
 
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
+file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/SwiftPackageDemo.xcscheme")
 file_names.push("#{folder_path}/Example/CodeDemo/Podfile")
 
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
+file_names.push("#{folder_path}/Example/StoryboardsDemo/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/SwiftPackageDemo.xcscheme")
 file_names.push("#{folder_path}/Example/StoryboardsDemo/Podfile")
 
 file_names.each do |file_name|
@@ -96,6 +98,8 @@ end
 File.rename("#{folder_path}/Example/#{example_folder}", "#{folder_path}/Example/#{example_name}")
 File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj",
   "#{folder_path}/Example/#{example_name}/#{example_name}.xcodeproj")
+File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/SwiftPackageDemo.xcscheme",
+  "#{folder_path}/Example/#{example_name}/SwiftPackageDemo.xcodeproj/xcshareddata/xcschemes/#{example_name}.xcscheme")
 File.rename("#{folder_path}/Example/#{example_name}/SwiftPackageDemo",
   "#{folder_path}/Example/#{example_name}/#{example_name}")
 
