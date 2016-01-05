@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
   lazy var viewController: ViewController = {
-    let controller = MainController()
+    let controller = ViewController()
     return controller
     }()
 
