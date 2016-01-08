@@ -1,12 +1,14 @@
+osx_image: xcode7.2
 language: objective-c
-xcode_project: <PACKAGENAME>.xcodeproj
+
 before_install:
-  - gem install obcd slather -N
-  - brew update
-  - brew upgrade xctool
-  - brew install carthage
-  - carthage bootstrap --verbose
-  - carthage install
-xcode_scheme: <PACKAGENAME>-iOS
-script: xctool -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-iOS -sdk iphonesimulator build test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test
-after_success: slather
+- brew update
+- brew install carthage
+- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+- carthage update --platform iOS,Mac
+
+script:
+- xctool clean build -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-iOS -sdk iphonesimulator
+- xctool test -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-iOS -sdk iphonesimulator
+- xctool clean build -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-Mac -sdk macosx
+- xctool test -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-Mac -sdk macosx
