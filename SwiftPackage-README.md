@@ -16,10 +16,6 @@
 <API>
 ```
 
-## Author
-
-<AUTHOR_NAME>, <AUTHOR_EMAIL>
-
 ## Installation
 
 **<PACKAGENAME>** is available through [CocoaPods](http://cocoapods.org). To install
