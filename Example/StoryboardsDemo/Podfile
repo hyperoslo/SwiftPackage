@@ -2,6 +2,6 @@ use_frameworks!
 
 platform :ios, '8.0'
 
-pod 'SwiftPackage', path: '../../'
-
-target 'SwiftPackageDemo'
+target 'SwiftPackageDemo' do
+ pod 'SwiftPackage', path: '../../'
+end
