@@ -32,6 +32,8 @@ To install just write into your Cartfile:
 github "<USERNAME>/<PACKAGENAME>"
 ```
 
+**<PACKAGENAME>** can also be installed manually. Just download and drop `Sources` folders in your project.
+
 ## Author
 
 <AUTHOR_NAME>, <AUTHOR_EMAIL>
