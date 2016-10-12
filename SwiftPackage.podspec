@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   # s.osx.frameworks = 'Cocoa', 'Foundation'
 
   # s.dependency 'Whisper', '~> 1.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end
