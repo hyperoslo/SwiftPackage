@@ -4,11 +4,15 @@ language: objective-c
 notifications:
   email: false
 
+cache:
+  directories:
+  - Carthage
+
 before_install:
 - brew update
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 - if brew outdated | grep -qx carthage; then brew upgrade carthage; fi
-- travis_wait 35 carthage bootstrap --platform iOS,Mac
+- travis_wait 35; bin/bootstrap-if-needed
 
 script:
 - xcodebuild clean build -project <PACKAGENAME>.xcodeproj -scheme <PACKAGENAME>-iOS -sdk iphonesimulator
