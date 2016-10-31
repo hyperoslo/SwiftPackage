@@ -107,7 +107,6 @@ git_directory = "#{folder_path}/.git"
 FileUtils.rm_rf git_directory
 FileUtils.rm('init.rb')
 
-system("carthage update")
 system("cd #{folder_path}/Example/#{example_name}; pod install; cd #{folder_path}")
 system("git init && git add . && git commit -am 'Initial commit'")
 system("git remote add origin https://github.com/#{username}/#{package_name}.git")
