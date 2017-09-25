@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D284B0F61F79024300D94AF3 /* macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B0F51F79024300D94AF3 /* macOS.swift */; };
 		D284B1051F79038B00D94AF3 /* SwiftPackage_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */; };
-		D284B10C1F79038B00D94AF3 /* SwiftPackage_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D284B0FE1F79038B00D94AF3 /* SwiftPackage_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D284B1231F79041C00D94AF3 /* tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1221F79041C00D94AF3 /* tvOS.swift */; };
 		D284B1251F79042800D94AF3 /* watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1241F79042800D94AF3 /* watchOS.swift */; };
 		D284B1371F7906DB00D94AF3 /* macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B12E1F7906DA00D94AF3 /* macOSTests.swift */; };
@@ -53,7 +52,6 @@
 /* Begin PBXFileReference section */
 		D284B0F51F79024300D94AF3 /* macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOS.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D284B0FE1F79038B00D94AF3 /* SwiftPackage_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPackage_tvOS.h; sourceTree = "<group>"; };
 		D284B1041F79038B00D94AF3 /* SwiftPackage-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPackage-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1221F79041C00D94AF3 /* tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS.swift; sourceTree = "<group>"; };
@@ -143,14 +141,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		D284B0FD1F79038B00D94AF3 /* SwiftPackage-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				D284B0FE1F79038B00D94AF3 /* SwiftPackage_tvOS.h */,
-			);
-			path = "SwiftPackage-tvOS";
-			sourceTree = "<group>";
-		};
 		D284B1201F79041300D94AF3 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +208,6 @@
 				D284B13F1F79081F00D94AF3 /* Info */,
 				D5C629691C3A809D007F7B7C /* Sources */,
 				D5C6298F1C3A8BDA007F7B7C /* SwiftPackageTests */,
-				D284B0FD1F79038B00D94AF3 /* SwiftPackage-tvOS */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -286,7 +275,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D284B10C1F79038B00D94AF3 /* SwiftPackage_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
