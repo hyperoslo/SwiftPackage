@@ -7,6 +7,7 @@ compatible and generates an empty example project.
 
 ## Features
 
+- Support Swift 4 🎉
 - Support iOS, macOS, tvOS, watchOS
 - Support Cocoapods, Carthage, Swift Package Manager
 - Use [Circle CI](https://circleci.com/)
