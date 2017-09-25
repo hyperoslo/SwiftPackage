@@ -58,10 +58,6 @@
 		D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1221F79041C00D94AF3 /* tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS.swift; sourceTree = "<group>"; };
 		D284B1241F79042800D94AF3 /* watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOS.swift; sourceTree = "<group>"; };
-		D284B1271F79061500D94AF3 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D284B1281F79061500D94AF3 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		D284B12B1F79063800D94AF3 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		D284B12C1F79063800D94AF3 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		D284B12E1F7906DA00D94AF3 /* macOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOSTests.swift; sourceTree = "<group>"; };
 		D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS-Tests.plist"; sourceTree = "<group>"; };
 		D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS-Tests.plist"; sourceTree = "<group>"; };
@@ -69,6 +65,10 @@
 		D284B1331F7906DA00D94AF3 /* Info-macOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS-Tests.plist"; sourceTree = "<group>"; };
 		D284B1361F7906DA00D94AF3 /* iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSTests.swift; sourceTree = "<group>"; };
 		D284B13D1F7907AD00D94AF3 /* tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSTests.swift; sourceTree = "<group>"; };
+		D284B1401F79081F00D94AF3 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D284B1411F79081F00D94AF3 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		D284B1421F79081F00D94AF3 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		D284B1431F79081F00D94AF3 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-macOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-macOS.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D5B2E89F1C3A780C00C0327D /* SwiftPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,17 +167,6 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
-		D284B1261F79061500D94AF3 /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				D284B12B1F79063800D94AF3 /* Info-tvOS.plist */,
-				D284B12C1F79063800D94AF3 /* Info-watchOS.plist */,
-				D284B1271F79061500D94AF3 /* Info-iOS.plist */,
-				D284B1281F79061500D94AF3 /* Info-macOS.plist */,
-			);
-			path = Info;
-			sourceTree = SOURCE_ROOT;
-		};
 		D284B12D1F7906DA00D94AF3 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,11 +199,23 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		D284B13F1F79081F00D94AF3 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D284B1401F79081F00D94AF3 /* Info-iOS.plist */,
+				D284B1411F79081F00D94AF3 /* Info-macOS.plist */,
+				D284B1421F79081F00D94AF3 /* Info-tvOS.plist */,
+				D284B1431F79081F00D94AF3 /* Info-watchOS.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-macOS.playground */,
+				D284B13F1F79081F00D94AF3 /* Info */,
 				D5C629691C3A809D007F7B7C /* Sources */,
 				D5C6298F1C3A8BDA007F7B7C /* SwiftPackageTests */,
 				D284B0FD1F79038B00D94AF3 /* SwiftPackage-tvOS */,
@@ -239,7 +240,6 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D284B1261F79061500D94AF3 /* Info */,
 				D284B1201F79041300D94AF3 /* tvOS */,
 				D284B1211F79041300D94AF3 /* watchOS */,
 				D284B0F41F79024300D94AF3 /* macOS */,
