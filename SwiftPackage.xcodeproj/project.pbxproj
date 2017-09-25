@@ -56,15 +56,17 @@
 		D284B0F51F79024300D94AF3 /* macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOS.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B0FE1F79038B00D94AF3 /* SwiftPackage_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPackage_tvOS.h; sourceTree = "<group>"; };
-		D284B0FF1F79038B00D94AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D284B1041F79038B00D94AF3 /* SwiftPackage-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPackage-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1091F79038B00D94AF3 /* SwiftPackage_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPackage_tvOSTests.swift; sourceTree = "<group>"; };
 		D284B10B1F79038B00D94AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B11A1F79039F00D94AF3 /* SwiftPackage_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPackage_watchOS.h; sourceTree = "<group>"; };
-		D284B11B1F79039F00D94AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D284B1221F79041C00D94AF3 /* tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS.swift; sourceTree = "<group>"; };
 		D284B1241F79042800D94AF3 /* watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOS.swift; sourceTree = "<group>"; };
+		D284B1271F79061500D94AF3 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D284B1281F79061500D94AF3 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		D284B12B1F79063800D94AF3 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		D284B12C1F79063800D94AF3 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-macOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-macOS.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D5B2E89F1C3A780C00C0327D /* SwiftPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +75,6 @@
 		D5C629491C3A7FAA007F7B7C /* SwiftPackage-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPackage-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629821C3A892A007F7B7C /* iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS.swift; sourceTree = "<group>"; };
 		D5C629861C3A89A8007F7B7C /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D5C6298C1C3A8BBD007F7B7C /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D5C629911C3A8BDA007F7B7C /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				D284B0FE1F79038B00D94AF3 /* SwiftPackage_tvOS.h */,
-				D284B0FF1F79038B00D94AF3 /* Info.plist */,
 			);
 			path = "SwiftPackage-tvOS";
 			sourceTree = "<group>";
@@ -165,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				D284B11A1F79039F00D94AF3 /* SwiftPackage_watchOS.h */,
-				D284B11B1F79039F00D94AF3 /* Info.plist */,
 			);
 			path = "SwiftPackage-watchOS";
 			sourceTree = "<group>";
@@ -186,13 +184,23 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
+		D284B1261F79061500D94AF3 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D284B12B1F79063800D94AF3 /* Info-tvOS.plist */,
+				D284B12C1F79063800D94AF3 /* Info-watchOS.plist */,
+				D284B1271F79061500D94AF3 /* Info-iOS.plist */,
+				D284B1281F79061500D94AF3 /* Info-macOS.plist */,
+			);
+			path = Info;
+			sourceTree = SOURCE_ROOT;
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-macOS.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
-				D5C6295C1C3A800E007F7B7C /* SwiftPackage */,
 				D5C6298F1C3A8BDA007F7B7C /* SwiftPackageTests */,
 				D284B0FD1F79038B00D94AF3 /* SwiftPackage-tvOS */,
 				D284B1081F79038B00D94AF3 /* SwiftPackage-tvOSTests */,
@@ -215,18 +223,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5C6295C1C3A800E007F7B7C /* SwiftPackage */ = {
-			isa = PBXGroup;
-			children = (
-				D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */,
-				D5C6298C1C3A8BBD007F7B7C /* Info-macOS.plist */,
-			);
-			path = SwiftPackage;
-			sourceTree = "<group>";
-		};
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D284B1261F79061500D94AF3 /* Info */,
 				D284B1201F79041300D94AF3 /* tvOS */,
 				D284B1211F79041300D94AF3 /* watchOS */,
 				D284B0F41F79024300D94AF3 /* macOS */,
@@ -663,7 +663,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "SwiftPackage-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-tvOS";
@@ -694,7 +694,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "SwiftPackage-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-tvOS";
@@ -769,7 +769,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "SwiftPackage-watchOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-watchOS";
@@ -801,7 +801,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "SwiftPackage-watchOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-watchOS";
@@ -931,7 +931,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftPackage/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -953,7 +953,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftPackage/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1011,7 +1011,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftPackage/Info-macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -1034,7 +1034,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftPackage/Info-macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
