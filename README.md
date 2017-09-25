@@ -1,10 +1,23 @@
 # SwiftPackage
 
 **SwiftPackage** is a template to create Swift frameworks. It has a basic
-folder structure and the project with shared framework and test targets for iOS
-and OSX. It also includes the necessary metadata files to make it
+folder structure and the project with shared framework and test targets. It also includes the necessary metadata files to make it
 [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage)
 compatible and generates an empty example project.
+
+## Features
+
+- Support iOS, macOS, tvOS, watchOS
+- Support Cocoapods, Carthage, Swift Package Manager
+- Use [Circle CI](https://circleci.com/)
+
+### Project structure
+
+- Shared: common files
+- iOS: for iOS target
+- macOS: for macoS target
+- tvOS: for tvOS target
+- watchOS: for watchOS target
 
 ## Usage
 
