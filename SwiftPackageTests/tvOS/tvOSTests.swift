@@ -1,6 +1,6 @@
 import XCTest
 
-class iOSTests: XCTestCase {
+class tvOSTests: XCTestCase {
 
   override func setUp() {
     super.setUp()

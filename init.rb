@@ -18,12 +18,12 @@ default_author_email = 'ios@hyper.no'
 default_username = 'hyperoslo'
 default_storyboards = 'no'
 
-package_name = ARGV.shift || prompt('Package name', default_package_name) || default_package_name
-bundle_domain = prompt('Bundle domain', default_bundle_domain) || default_bundle_domain
-author_name = prompt('Author', default_author_name) || default_author_name
-author_email = prompt('E-mail', default_author_email) || default_author_email
-username = prompt('Username', default_username) || default_username
-use_storyboards = prompt('Example with Storyboards? - yes/no', default_storyboards) || default_storyboards
+package_name = ARGV.shift || prompt('🏆 Package name', default_package_name) || default_package_name
+bundle_domain = prompt('💼 Bundle Id ', default_bundle_domain) || default_bundle_domain
+author_name = prompt('😎 Author', default_author_name) || default_author_name
+author_email = prompt('📧 E-mail', default_author_email) || default_author_email
+username = prompt('👑 Username', default_username) || default_username
+use_storyboards = prompt('🤖 Example with Storyboards? - yes/no', default_storyboards) || default_storyboards
 storyboards_example = use_storyboards.downcase == "yes"
 
 file_names = Dir["#{folder_path}/**/*.*"]
