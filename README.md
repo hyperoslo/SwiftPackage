@@ -13,11 +13,14 @@ compatible and generates an empty example project.
 
 ### Project structure
 
-- Shared: common files
-- iOS: for iOS target
-- macOS: for macoS target
-- tvOS: for tvOS target
-- watchOS: for watchOS target
+- Sources: contains source files
+	- Shared: common files
+	- iOS: for iOS target
+	- macOS: for macoS target
+	- tvOS: for tvOS target
+	- watchOS: for watchOS target
+- Info: contains target `Info.plist` files
+- SwiftPackageTests: contains test files
 
 ## Usage
 
