@@ -11,30 +11,29 @@ end
 
 folder_path = __dir__
 
-default_package_name = 'MyPackage'
+default_package_name = File.basename(Dir.getwd)
 default_bundle_domain = 'no.hyper'
-default_author_name = 'Hyper Interaktiv AS'
-default_author_email = 'ios@hyper.no'
-default_username = 'hyperoslo'
+default_author_name = `git config user.name`.strip
+default_author_email = `git config user.email`.strip
+default_username = default_author_email.split('@').first
 default_storyboards = 'no'
 
-package_name = ARGV.shift || prompt('🏆 Package name', default_package_name) || default_package_name
-bundle_domain = prompt('💼 Bundle Id ', default_bundle_domain) || default_bundle_domain
-author_name = prompt('😎 Author', default_author_name) || default_author_name
-author_email = prompt('📧 E-mail', default_author_email) || default_author_email
-username = prompt('👑 Username', default_username) || default_username
-use_storyboards = prompt('🤖 Example with Storyboards? - yes/no', default_storyboards) || default_storyboards
+package_name = ARGV.shift || prompt('🏆  Package name', default_package_name) || default_package_name
+bundle_domain = prompt('💼  Bundle Id ', default_bundle_domain) || default_bundle_domain
+author_name = prompt('😎  Author', default_author_name) || default_author_name
+author_email = prompt('📧  E-mail', default_author_email) || default_author_email
+username = prompt('👑  Username', default_username) || default_username
+use_storyboards = prompt('🤖  Example with Storyboards? - yes/no', default_storyboards) || default_storyboards
 storyboards_example = use_storyboards.downcase == "yes"
 
 file_names = Dir["#{folder_path}/**/*.*"]
 
-file_names.push("#{folder_path}/.slather.yml")
-file_names.push("#{folder_path}/.travis.yml")
+file_names.push("#{folder_path}/circle.yml")
 
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
 file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS.xcscheme")
-file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac.xcscheme")
+file_names.push("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-macOS.xcscheme")
 
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.pbxproj")
 file_names.push("#{folder_path}/Example/CodeDemo/SwiftPackageDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata")
@@ -58,7 +57,10 @@ file_names.each do |file_name|
     '.lproj',
     '.rb',
     '.framework',
-    '.playground']
+    '.playground'
+  ]
+
+  next if file_name.include?('DerivedData')
 
   if !ignored_file_types.include?(File.extname(file_name))
     text = File.read(file_name)
@@ -77,12 +79,11 @@ end
 FileUtils.rm('README.md')
 File.rename('SwiftPackage-README.md', 'README.md')
 File.rename("#{folder_path}/SwiftPackage.podspec", "#{folder_path}/#{package_name}.podspec")
-File.rename("#{folder_path}/SwiftPackage", "#{folder_path}/#{package_name}")
 File.rename("#{folder_path}/SwiftPackageTests", "#{folder_path}/#{package_name}Tests")
 File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-iOS.xcscheme",
   "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-iOS.xcscheme")
-File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-Mac.xcscheme",
-  "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-Mac.xcscheme")
+File.rename("#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/SwiftPackage-macOS.xcscheme",
+  "#{folder_path}/SwiftPackage.xcodeproj/xcshareddata/xcschemes/#{package_name}-macOS.xcscheme")
 File.rename("#{folder_path}/SwiftPackage.xcodeproj", "#{folder_path}/#{package_name}.xcodeproj")
 
 example_folder = "CodeDemo"
