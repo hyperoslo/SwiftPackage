@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D284B0F61F79024300D94AF3 /* macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B0F51F79024300D94AF3 /* macOS.swift */; };
-		D284B1051F79038B00D94AF3 /* SwiftPackage_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */; };
+		D284B1051F79038B00D94AF3 /* SwiftPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* SwiftPackage.framework */; };
 		D284B1231F79041C00D94AF3 /* tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1221F79041C00D94AF3 /* tvOS.swift */; };
 		D284B1251F79042800D94AF3 /* watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1241F79042800D94AF3 /* watchOS.swift */; };
 		D284B1381F7906DB00D94AF3 /* Info-iOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */; };
@@ -55,9 +55,9 @@
 
 /* Begin PBXFileReference section */
 		D284B0F51F79024300D94AF3 /* macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOS.swift; sourceTree = "<group>"; };
-		D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D284B0FC1F79038B00D94AF3 /* SwiftPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* SwiftPackage-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPackage-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D284B1181F79039F00D94AF3 /* SwiftPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1221F79041C00D94AF3 /* tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS.swift; sourceTree = "<group>"; };
 		D284B1241F79042800D94AF3 /* watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOS.swift; sourceTree = "<group>"; };
 		D284B12E1F7906DA00D94AF3 /* macOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOSTests.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D284B1051F79038B00D94AF3 /* SwiftPackage_tvOS.framework in Frameworks */,
+				D284B1051F79038B00D94AF3 /* SwiftPackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +223,9 @@
 				D5B2E8A91C3A780C00C0327D /* SwiftPackage-iOS-Tests.xctest */,
 				D5C629401C3A7FAA007F7B7C /* SwiftPackage.framework */,
 				D5C629491C3A7FAA007F7B7C /* SwiftPackage-macOS-Tests.xctest */,
-				D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */,
+				D284B0FC1F79038B00D94AF3 /* SwiftPackage.framework */,
 				D284B1041F79038B00D94AF3 /* SwiftPackage-tvOS-Tests.xctest */,
-				D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */,
+				D284B1181F79039F00D94AF3 /* SwiftPackage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 			);
 			name = "SwiftPackage-tvOS";
 			productName = "SwiftPackage-tvOS";
-			productReference = D284B0FC1F79038B00D94AF3 /* SwiftPackage_tvOS.framework */;
+			productReference = D284B0FC1F79038B00D94AF3 /* SwiftPackage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D284B1031F79038B00D94AF3 /* SwiftPackage-tvOS-Tests */ = {
@@ -357,7 +357,7 @@
 			);
 			name = "SwiftPackage-watchOS";
 			productName = "SwiftPackage-watchOS";
-			productReference = D284B1181F79039F00D94AF3 /* SwiftPackage_watchOS.framework */;
+			productReference = D284B1181F79039F00D94AF3 /* SwiftPackage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D5B2E89E1C3A780C00C0327D /* SwiftPackage-iOS */ = {
@@ -656,7 +656,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPackage;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -687,7 +687,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPackage;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -765,7 +765,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPackage;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -797,7 +797,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.SwiftPackage-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPackage;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
