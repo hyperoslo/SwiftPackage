@@ -16,7 +16,7 @@ default_bundle_domain = 'no.hyper'
 default_author_name = `git config user.name`.strip
 default_author_email = `git config user.email`.strip
 default_username = default_author_email.split('@').first
-default_git_host = 'github.com'
+default_git_host = 'https://github.com'
 default_storyboards = 'no'
 
 package_name = ARGV.shift || prompt('🏆  Package name', default_package_name) || default_package_name
@@ -112,5 +112,5 @@ FileUtils.rm('init.rb')
 
 system("cd #{folder_path}/Example/#{example_name}; pod install; cd #{folder_path}")
 system("git init && git add . && git commit -am 'Initial commit'")
-system("git remote add origin https://#{git_host}/#{username}/#{package_name}.git")
+system("git remote add origin #{git_host}/#{username}/#{package_name}.git")
 system("open \"#{folder_path}/#{package_name}.xcodeproj\"")
